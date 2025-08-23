@@ -21,3 +21,19 @@
 
 // // Initialize after script load
 // window.onload = initAutocomplete;
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const myForm = document.getElementById('myForm');
+  const popupOverlay = document.getElementById('popupOverlay');
+  const closePopup = document.getElementById('closePopup');
+
+  myForm.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+    popupOverlay.style.display = 'block'; // Show the popup
+  });
+
+  closePopup.addEventListener('click', function() {
+    popupOverlay.style.display = 'none'; // Hide the popup
+  });
+});

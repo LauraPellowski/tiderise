@@ -32,9 +32,11 @@
                 <form class="row g-3" action="https://formsubmit.co/8a0391102ffd509f3c7a17ed6080a1e8" method="POST">
                     <!-- honey pot -->
                     <input type="text" name="_honey" style="display: none;">
-                    <!-- disable captcha -->
-                    <input type="hidden" name="_captcha" value="false">
-                    
+                    <!-- disable captcha
+                    <input type="hidden" name="_captcha" value="false"> -->
+
+                    <input type="hidden" name="_next" value="./success.html">
+
                     <div class="col-md-6">
                         <!-- <label for="firstName" class="form-label" style="color: seashell;">First Name</label> -->
                         <input type="text" class="form-control" name="FirstName" id="firstName" autocomplete="given-name" placeholder="First Name" required>
@@ -63,6 +65,14 @@
                     </div>
                 </form>
             </div>
+
+            <div class="popup-overlay" id="popupOverlay">
+                <div class="popup" id="popup">
+                    <span class="close-button" id="closePopup">&times;</span>
+                    <div class="popup-content"><p class="thankYou">Thank you for your submission!</p><p class="descriptionCenter">We will be in touch soon.</p></div>
+                </div>
+            </div>
+
             <div class="containerNumbers">
                 <div class="boxNumbers">
                     <p class="num">1<p>
