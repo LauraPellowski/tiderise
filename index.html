@@ -29,13 +29,9 @@
             <h1 class="bigTitle">Sell Your House Today</h1>
             <h2 class="subTitle">No Fees - Any Condition - No Commissions - No Repairs Required</h2>
             <div class="container mt-5 w-50 mx-auto">
-                <form class="row g-3" action="https://formsubmit.co/8a0391102ffd509f3c7a17ed6080a1e8" method="POST" id="myForm">
-                    <!-- honey pot -->
-                    <!-- <input type="text" name="_honey" style="display: none;"> -->
-                    <!-- disable captcha -->
-                    <!-- <input type="hidden" name="_captcha" value="false"> -->
+                <form class="row g-3" action="https://api.web3forms.com/submit" method="POST">
 
-                    <input type="hidden" name="_next" value="https://tiderise.onrender.com/thanks.html">
+                    <input type="hidden" name="access_key" value="8ee887a4-e6c6-4c6d-8e49-136ceb5fe2ec">
 
                     <div class="col-md-6">
                         <!-- <label for="firstName" class="form-label" style="color: seashell;">First Name</label> -->
@@ -60,6 +56,8 @@
                         <input type="text" class="form-control" name="Address" id="autocomplete" autocomplete="street-address" placeholder="Property Address"required>
                     </div>
                 
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                    
                     <div class="col-md-12">
                         <button type="submit" class="btn btn-lg w-100" id="getNowButton" style="color: seashell; background-color: #e87a00">Get Cash Offer Now</button>
                     </div>
