@@ -1,0 +1,127 @@
+* {
+    /* font-family: "Times New Roman", Times, serif; */
+    font-family: Tahoma, Verdana, sans-serif;
+}
+
+.desiredBody {
+    background-color: #001f3d;
+}
+
+/* #mainHeader {
+    
+} */
+
+main {
+    background-color: #045174;  
+}
+
+footer {
+    background-color: seashell;
+}
+
+.bigTitle {
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    color: seashell;
+    margin: 0px 0px 0px 0px;  
+    padding: 50px 26px 10px;
+}
+
+.subTitle {
+    text-align: center;
+    font-size: 24px;
+    color: seashell;
+}
+
+h3 {
+    font-size: 30px;
+    color: seashell;
+    background-color:#001f3d;
+    max-width: 900px;
+    margin: auto;
+    padding: 5px 10px;
+}
+
+h4 {
+    margin: 0px 0px 0px 0px; 
+}
+
+p, ul {
+    color: seashell;
+    font-size: 20px;
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.5;
+}
+
+.num {
+    color: #001f3d;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 0px 0px 25px #045174;
+}
+
+.description {
+    color: #045174;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.subDescription {
+    color: #045174;
+    font-size: 15px;
+}
+
+.logo {
+    height: 125px;
+    width: auto;
+}
+
+.tabBar {
+    overflow: hidden;
+    background-color: #e87a00;
+}
+
+.tabBar a {
+    display: inline-block;
+    color: seashell;
+    background-color: #e87a00;
+    font-weight: bold;  
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: transform 0.2s ease;
+}
+
+.tabBar a:hover {
+    transform: scale(1.2)
+}
+
+.tabBar a.currentTab {
+    background-color: #045174;
+}
+
+#getNowButton:hover {
+    transition: transform 0.2s ease;
+    transform: scale(1.02)
+}
+
+.containerNumbers {
+    display: flex;            /* puts items in a row */
+    justify-content: space-between;
+    max-width: 75%;
+    margin: auto;
+    gap: 20px;                /* spacing between boxes */
+    padding: 100px 20px;
+}
+
+.boxNumbers {
+    flex: 1;                  /* each takes equal width */
+    padding: 20px;
+    border-radius: 8px;
+    background-color: seashell;
+    text-align: center;
+}
+

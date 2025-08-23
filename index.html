@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <link rel="icon" type="image/png" href="./resources/faviconTest.png" />
+        <script src="https://maps.googleapis.com/maps/api/js?key=API_KEY&libraries=places" defer></script>
+        <script src="main.js"></script>
+        <title>Tiderise</title>
+    </head>
+    <body class="desiredBody">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+        
+
+        <header id="mainHeader">
+            <a href="index.html" class="logo">
+                <img class="logo" src="./resources/logoCropped.png" alt="Tiderise Capital logo. Navigates back to home tab.">
+            </a>
+            <nav class="tabBar">
+                <a href="index.html" class="currentTab">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="investors.html">Invest With Us</a>
+            </nav>
+        </header>
+
+        <main>
+            <h1 class="bigTitle">Sell Your House Today</h1>
+            <h2 class="subTitle">No Fees - Any Condition - No Commissions - No Repairs Required</h2>
+            <div class="container mt-5 w-50 mx-auto">
+                <form class="row g-3" action="https://formsubmit.co/EMAIL" method="POST">
+                    <div class="col-md-6">
+                        <!-- <label for="firstName" class="form-label" style="color: seashell;">First Name</label> -->
+                        <input type="text" class="form-control" name="FirstName" id="firstName" autocomplete="given-name" placeholder="First Name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <!-- <label for="lastName" class="form-label" style="color: seashell;">Last Name</label> -->
+                        <input type="text" class="form-control" name="LastName" id="lastName" autocomplete="family-name" placeholder="Last Name" required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <!-- <label for="phone" class="form-label" style="color: seashell;">Phone Number</label> -->
+                        <input type="text" class="form-control" name="PhoneNumber" id="phone" autocomplete="tel" placeholder="Phone Number" required>
+                    </div>
+                    <div class="col-md-6">
+                        <!-- <label for="email" class="form-label" style="color: seashell;">Email Address</label> -->
+                        <input type="text" class="form-control" name="EmailAddress" id="email" autocomplete="email" placeholder="Email Address" required>
+                    </div>
+
+                    <div class="col-md-12">
+                        <!-- <label for="autocomplete" class="form-label" style="color: seashell;">Address</label> -->
+                        <input type="text" class="form-control" name="Address" id="autocomplete" autocomplete="street-address" placeholder="Property Address"required>
+                    </div>
+                
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-lg w-100" id="getNowButton" style="color: seashell; background-color: #e87a00">Get Cash Offer Now</button>
+                    </div>
+                </form>
+            </div>
+            <div class="containerNumbers">
+                <div class="boxNumbers">
+                    <p class="num">1<p>
+                    <p class="description">First you do this</p>
+                    <p class="subDescription">More information here to be more specific about what we just said</p>
+                </div>
+                <div class="boxNumbers">
+                    <p class="num">2<p>
+                    <p class="description">Then this happens</p>
+                    <p class="subDescription">More information here to be more specific about what we just said</p>
+                </div>
+                <div class="boxNumbers">
+                    <p class="num">3<p></p>
+                    <p class="description">Soon after we let you know this</p>
+                    <p class="subDescription">More information here to be more specific about what we just said</p>
+                </div>
+                <div class="boxNumbers">
+                    <p class="num">4</p>
+                    <p class="description">At last final step for you</p>
+                    <p class="subDescription">More information here to be more specific about what we just said</p>
+                </div>
+            </div>
+            <br>
+            <br>
+
+        </main>
+    </body>
+    <footer>
+        <h4>copyright information to go here</h4>
+    </footer>
+</html>
