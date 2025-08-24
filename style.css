@@ -56,21 +56,22 @@ p, ul {
 }
 
 .num {
-    color: #001f3d;
-    font-size: 40px;
+    color: #045174;
+    font-size: 20px;
     font-weight: bold;
-    text-shadow: 0px 0px 25px #045174;
+    /* text-shadow: 0px 0px 30px #045174; */
 }
 
 .description {
-    color: #045174;
+    color: #001f3d;
     font-size: 20px;
+    padding: 20px 0px 0px;
     font-weight: bold;
 }
 
 
 .subDescription {
-    color: #045174;
+    color: #001f3d;
     font-size: 15px;
 }
 
@@ -118,18 +119,23 @@ p, ul {
 
 .containerNumbers {
     display: flex;            /* puts items in a row */
-    justify-content: space-between;
-    max-width: 75%;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 80%; /*changed from 75%*/
     margin: auto;
     gap: 20px;                /* spacing between boxes */
-    padding: 100px 20px;
+    padding: 10px 20px;
 }
 
 .boxNumbers {
-    flex: 1;                  /* each takes equal width */
-    padding: 20px;
+    /* flex: 1;                  each takes equal width */
+    flex: 1 1 220px; 
+    /* flexible but with a min width */
+    max-width: 220px;
+    padding: 20px 20px 0px;
     border-radius: 8px;
     background-color: seashell;
     text-align: center;
 }
+
 
