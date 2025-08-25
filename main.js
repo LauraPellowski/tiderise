@@ -5,9 +5,9 @@ function initAutocomplete() {
 autocomplete = new google.maps.places.Autocomplete(
     document.getElementById('autocomplete'),
     {
-    types: ['address'], // only addresses
-    componentRestrictions: { country: "us" }, // optional: restrict to a country
-    fields: ["formatted_address", "geometry", "name"] // what data to return
+        types: ['address'], // only addresses
+        componentRestrictions: { country: "us" }, // optional: restrict to a country
+        fields: ["formatted_address"] // what data to return
     }
 );
 
