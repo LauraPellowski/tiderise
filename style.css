@@ -110,13 +110,13 @@ p, ul {
 }
 
 .logo {
-    height: 125px;
+    height: 150px;
     width: auto;
 }
 
 .logoThanks {
     display: block;
-    height: 200px;
+    height: 250px;
     width: auto;
     margin: 30px auto 0px;
 }
