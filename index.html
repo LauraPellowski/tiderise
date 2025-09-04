@@ -64,11 +64,14 @@
                             <div class="col-md-6">
                                 <!-- color approx of dark blue with 0.7 opacity -->
                                 <select class="form-select" name="ContactPreference" id="contactPreference" style="color: #4d6377 !important;" required>
-                                    <option selected disabled>Select Communication Preference</option>
+                                    <option value="" selected disabled>Select Communication Preference</option>
                                     <option value="Text">Text</option>
                                     <option value="Call">Call</option>
                                     <option value="No Preference">No Preference</option>
                                 </select>
+                                <div class="invalid-feedback">
+                                    Please select an option.
+                                </div>
                             </div>
 
                             <div class="col-md-12">
