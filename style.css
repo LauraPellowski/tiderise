@@ -177,4 +177,9 @@ p, ul {
     opacity: 0.7 !important;
 }
 
+.formDropdown {
+    color: #001f3d !important; /* important to override bootstrap*/
+    opacity: 0.7 !important;
+}
+
 

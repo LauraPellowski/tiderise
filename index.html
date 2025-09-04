@@ -26,9 +26,11 @@
             <nav class="tabBar">
                 <a href="index.html" class="currentTab">Home</a>
                 <a href="about.html">About Us</a>
-                <a href="investors.html">Invest With Us</a>
+                <!-- <a href="projects.html">Completed Projects</a> -->
+                
                 <a href="contact.html" style="float:right">Contact Us</a>
-                <a href="projects.html" style="float:right">Completed Projects</a>
+                <a href="investors.html" style="float:right">Invest With Us</a>
+                
             </nav>
         </header>
 
@@ -41,7 +43,8 @@
                     <div class="container mt-5 w-50 mx-auto">
                         <form class="row g-3" action="https://api.web3forms.com/submit" method="POST">
 
-                            <input type="hidden" name="access_key" value="baed442f-9c4e-47c1-8ec4-30883b4eca80">
+                            <input type="hidden" name="access_key" value="8ee887a4-e6c6-4c6d-8e49-136ceb5fe2ec">
+                            <!-- baed442f-9c4e-47c1-8ec4-30883b4eca80 -->
                             <!-- "The above access key is a public key (not API Key), which means you can use this code directly in the website source code" web3forms -->
 
                             <div class="col-md-6">
@@ -57,7 +60,16 @@
                                 <!-- <label for="phone" class="form-label" style="color: seashell;">Phone Number</label> -->
                                 <input type="text" class="form-control" name="PhoneNumber" id="phone" autocomplete="tel" placeholder="Phone Number" required>
                             </div>
+
                             <div class="col-md-6">
+                                <select class="form-select" name="ContactPreference" id="contactPreference" required>
+                                    <option selected>Select Communication Preference</option>
+                                    <option>Text</option>
+                                    <option>Call</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-12">
                                 <!-- <label for="email" class="form-label" style="color: seashell;">Email Address</label> -->
                                 <input type="text" class="form-control" name="EmailAddress" id="email" autocomplete="email" placeholder="Email Address" required>
                             </div>
@@ -69,6 +81,7 @@
                         
                             <!-- <input type="hidden" name="redirect" value="https://web3forms.com/success"> -->
                             <input type="hidden" name="redirect" value="https://tiderise.onrender.com/thanks.html">
+                            <!-- <input type="hidden" name="redirect" value="./thanks.html"> -->
 
                             <div class="col-md-12">
                                 <button type="submit" class="btn btn-lg w-100" id="getNowButton" style="color: seashell; background-color: #e87a00">Get Cash Offer Now</button>
@@ -84,26 +97,26 @@
                 <div class="boxNumbers">
                     <i class="fa-solid fa-3x fa-comments" style="color: #045174"></i>
                     <p class="description">Tell us about the property</p>
-                    <p class="subDescription">More information here to be more specific about what we just said</p>
+                    <p class="subDescription">An opportunity for you to share any details you feel are essential for us to know about the property. For example, information on recent updates, such as roof, window, or water heater replacements.</p>
                     <!-- <p class="num">1<p></p> -->
                     
                 </div>
                 <div class="boxNumbers">
                     <i class="fa-solid fa-3x fa-calendar-check" style="color: #045174"></i>
                     <p class="description">We schedule an appointment</p>
-                    <p class="subDescription">More information here to be more specific about what we just said</p>
+                    <p class="subDescription">This step is part of our due diligence process and is designed for us to confirm the details discussed on the phone, in person.</p>
                     <!-- <p class="num">2<p></p> -->
                 </div>
                 <div class="boxNumbers">
                     <i class="fa-solid fa-3x fa-hand-holding-dollar" style="color: #045174"></i>
                     <p class="description">We make a cash offer</p>
-                    <p class="subDescription">More information here to be more specific about what we just said</p>
+                    <p class="subDescription">You keep the full offer amount at closing. We take care of closing costs, and you're free to leave behind anything you don't want. No repairs, no cleaning, and no commissions—just a simple, stress-free process.</p>
                     <!-- <p class="num">3<p></p> -->
                 </div>
                 <div class="boxNumbers">
                     <i class="fa-solid fa-3x fa-house-chimney-window" style="color: #045174"></i>
                     <p class="description">House is closed on your schedule</p>
-                    <p class="subDescription">More information here to be more specific about what we just said</p>
+                    <p class="subDescription">Closing marks the official transfer of ownership. While we can close in as little as 7 days, the timeline is entirely up to you—we'll schedule closing at your convenience.</p>
                     <!-- <p class="num">4</p> -->
                 </div>
             </div>
@@ -136,6 +149,7 @@
 
             <div style="background-color:#001f3d; margin: auto; padding-bottom: 40px">
                 <h1 class="bigTitle" style="font-size: 40px">Why Sell Your Home to Tiderise Capital?</h1>
+                <br>
                 <p style="padding-bottom: 40px; margin-bottom: 0px">At <b>Tiderise Capital</b>, we understand that selling a home—especially 
                     under stressful or difficult circumstances—can feel overwhelming. That’s why we make the process simple, fast, and 
                     stress-free. When you work with us, you won’t have to deal with the headaches of traditional real estate.
@@ -170,6 +184,7 @@
                         
             <div style="margin: auto; margin: 0px">
                 <h1 class="bigTitle" style="font-size: 40px">The Tiderise Difference</h1>
+                <br>
                 <p style="padding-bottom: 40px; margin-bottom: 0px">We take pride in offering homeowners a <b>fast, fair, and hassle-free 
                     solution</b>. Whether you're facing foreclosure, dealing with inherited property, or need to sell quickly, Tiderise Capital 
                     is here to help.
