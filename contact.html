@@ -2,9 +2,14 @@
 <html>
     <head lang="en">
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <link rel="icon" type="image/png" href="./resources/faviconTest.svg" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
         
         <link href="./resources/fontawesome/css/fontawesome.css" rel="stylesheet" />
         <link href="./resources/fontawesome/css/brands.css" rel="stylesheet" />
@@ -18,23 +23,26 @@
                 <img class="logo" src="./resources/logoCropped.svg" alt="Tiderise Capital logo. Navigates back to home tab.">
             </a>
             <nav class="tabBar">
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <!-- <a href="projects.html">Completed Projects</a> -->
-                
-                <a href="contact.html" style="float:right"  class="currentTab">Contact Us</a>
-                <a href="investors.html" style="float:right" >Invest With Us</a>
+                <div class="tabLeft">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <!-- <a href="projects.html">Completed Projects</a> -->
+                </div>
+                <div class="tabRight">
+                    <a href="investors.html">Invest With Us</a> 
+                    <a href="contact.html" class="currentTab">Contact Us</a>
+                </div>
             </nav>
         </header>
 
         <main>
             <h1 class="bigTitle">Contact Us</h1>
-            <div class="containerNumbers" style="gap:40px;">
-                <div class="boxNumbers" style="max-width:250px">
+            <div class="containerNumbers" style="gap:40px; max-width: 60%">
+                <div class="boxNumbers">
                     <i class="fa-solid fa-7x fa-envelope" style="color: #045174"></i>
                     <p class="description" style="color: #001f3d">info@tiderisecap.com</p>                    
                 </div>
-                <div class="boxNumbers" style="max-width:250px">
+                <div class="boxNumbers">
                     <i class="fa-solid fa-7x fa-phone" style="color: #045174"></i>
                     <p class="description" style="color: #001f3d">860.743.0336</p>
                 </div>
