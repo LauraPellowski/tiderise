@@ -101,7 +101,7 @@ function switchTab(direction) {
             //Yes
             let seedAmount = document.getElementById("seedAmount").value
             if (seedAmount < 100000) {
-                console.log("denied")
+                window.location.href = 'https://tiderise.onrender.com/investFormOutcome1.html'
             } else {
                 document.getElementById("investForm").submit()
             }
