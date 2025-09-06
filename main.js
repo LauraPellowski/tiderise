@@ -35,19 +35,20 @@ function show(tab) {
         //this is the first tab so we don't want the previous button to show
         document.getElementById("prevBtn").style.display = "none";
         document.getElementById("nextBtnDiv").className = "col-md-12";
-        document.getElementById("nextBtn").innerHTML = "Partner With Us";
+        console.log("here")
+        document.getElementById("nextBtn").textContent = "Partner With Us";
+        document.getElementById("investBtnsDiv").style = "";
     } else {
         document.getElementById("prevBtn").style.display = "block";
         document.getElementById("nextBtnDiv").className = "col-md-3";
-        document.getElementById("nextBtn").innerHTML = "Next";
+        document.getElementById("nextBtn").textContent = "Next";
+        document.getElementById("investBtnsDiv").style = "margin-top:3px";
     }
 
     if (tab == (tabs.length - 1)) {
         //if its the last tab then we want to change the name of the button
         //last tab is either of the two last tabs hence the condition above
-        document.getElementById("nextBtn").innerHTML = "Submit";
-    } else {
-        document.getElementById("nextBtn").innerHTML = "Next";
+        document.getElementById("nextBtn").textContent = "Submit";
     }
     
 }
@@ -73,7 +74,14 @@ function switchTab(direction) {
         }
     } else if (direction == -1) {
         if (currentTab == 2) {
-            currentTab += -2 //skip past the "No branch"
+            let accredited = document.getElementById("accreditedInvestor").value
+
+            if (accredited == "No") {
+                currentTab += direction
+            } else {
+                currentTab += -2 //skip past the "No branch"
+            }
+            
         } else {
             currentTab += direction
         }
