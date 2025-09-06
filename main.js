@@ -29,15 +29,20 @@ show(currentTab)
 function show(tab) {
     let tabs = document.getElementsByClassName("tab")
     tabs[tab].style.display = "block"
+    console.log("tab: ", tab)
 
     if (tab == 0) {
         //this is the first tab so we don't want the previous button to show
         document.getElementById("prevBtn").style.display = "none";
+        document.getElementById("nextBtnDiv").className = "col-md-12";
+        document.getElementById("nextBtn").innerHTML = "Partner With Us";
     } else {
         document.getElementById("prevBtn").style.display = "block";
+        document.getElementById("nextBtnDiv").className = "col-md-3";
+        document.getElementById("nextBtn").innerHTML = "Next";
     }
 
-    if (tab == (tabs.length - 1) || tab == (tabs.length - 2)) {
+    if (tab == (tabs.length - 1)) {
         //if its the last tab then we want to change the name of the button
         //last tab is either of the two last tabs hence the condition above
         document.getElementById("nextBtn").innerHTML = "Submit";
@@ -48,8 +53,6 @@ function show(tab) {
 }
 
 function switchTab(direction) {
-    //FIXME seed amount for NO with YES&YES?
-
     let tabs = document.getElementsByClassName("tab")
 
     if (direction == 1 && !validateTab()) {
