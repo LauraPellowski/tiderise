@@ -10,10 +10,6 @@
     background-color: #001f3d; 
 }
 
-/* #mainHeader {
-    
-} */
-
 main {
     background-color: #045174;  
 }
@@ -21,6 +17,9 @@ main {
 footer {
     background-color: seashell;
 }
+
+.tab { display: none; }
+.tab.active { display: block; }
 
 img.samples {
     height: 200px;
@@ -178,5 +177,10 @@ p, ul {
 ::placeholder {
     color: #001f3d !important; /* important to override bootstrap*/
     opacity: 0.7 !important;
+}
+
+input.invalid, select.invalid {
+    /* lighter orange */
+    background-color: #eab899; 
 }
 
