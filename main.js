@@ -94,7 +94,7 @@ function switchTab(direction) {
         if (prevTab == 1) {
             //No
             //case were skip past last set of questions
-            window.location.href = 'investFormOutcome1.html'
+            window.location.href = 'https://tiderise.onrender.com/investFormOutcome1.html'
             
 
         } else if (prevTab == 2) {
