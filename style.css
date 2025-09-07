@@ -156,7 +156,7 @@ p, ul {
     background-color: #045174;
 }
 
-#getNowButton:hover {
+.btn:hover {
     transition: transform 0.2s ease;
     transform: scale(1.02)
 }
@@ -191,6 +191,10 @@ input.invalid, select.invalid {
     /* lighter orange */
     background-color: #eab899; 
 }
+
+
+
+
 
 @media (max-width: 768px) {
   .tabBar a {
