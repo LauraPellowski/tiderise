@@ -14,13 +14,15 @@ function initAutocomplete() {
     // When the user selects an address
     autocomplete.addListener("place_changed", () => {
         const place = autocomplete.getPlace();
-        console.log("Selected place:", place.formatted_address);
-        // You can fill hidden fields with place data if needed
+        // console.log("Selected place:", place.formatted_address);
     });
 }
 
 // Initialize after script load
 window.onload = initAutocomplete;
+
+
+////////////////////////////////////////////
 
 
 let currentTab = 0
@@ -105,14 +107,14 @@ function switchTab(direction) {
         if (prevTab == 1) {
             //No
             //case were skip past last set of questions
-            window.location.href = 'https://tiderise.onrender.com/investFormOutcome1.html'
+            window.location.href = 'https://www.tiderisecap.com/investFormOutcome1.html'
             
 
         } else if (prevTab == 2) {
             //Yes
             let seedAmount = document.getElementById("seedAmount").value
             if (seedAmount < 100000) {
-                window.location.href = 'https://tiderise.onrender.com/investFormOutcome1.html'
+                window.location.href = 'https://www.tiderisecap.com/investFormOutcome1.html'
             } else {
                 document.getElementById("investForm").submit()
             }
